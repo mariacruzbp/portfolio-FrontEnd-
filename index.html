@@ -8,37 +8,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/404b855354.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css"> 
-
     <title>Maqueta</title>
 </head>
 <body>
+    <!-------------------------------------->
+    <!-- ENCABEZADO -->
+    <!-------------------------------------->
     <!-- Parte de arriba con el argentina programa y el login -->
-    <!--Seccion navbar-->
-    <section id="navbar">
-         <!-- As a heading -->
-  <nav class="navbar bg-body-tertiary">
+<header class="container-fluid bg-dark d-flex justify-content-start">
+    <img src="assets/css/img/logo argentina.png" class="d-block w-25 mx-0 p-2" alt="logo argentina programa">
+    <p class="text-light mb-0 p-4 fs-5">#yoprogramo</p>
+</header>
+<!-------------------------------------->
+<!---------SECCION NAVBAR--------------->
+<!-------------------------------------->
+<nav class="navbar navbar-expand-lg sticky-top bg-dark p-3" id="menu">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets/css/img/logo argentina.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
-            #yoprogramo
-          </a>
+      <a class="navbar-brand" href="index.html">
+        <button class="bg-dark mg rounded"><span class="text-light fs-5 fw-bold">Inicio</span></button>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos  
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="email" placeholder="Correo electronico" aria-label="email">
+          <button class="btn btn-secondary text-light btn-outline-success" type="button">Buscar</button>
+        </form>
+      </div>
     </div>
-    </section>
+  </nav>
+
+
+
+
+
+
+    <!--Seccion navbar-->
+    
 
  <!--introduccion al portfolio y boton de inicio-->
- <section>
-    <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid justify-content-start">
-              <button class="btn btn-outline-success me-2" type="button">Inicio</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button">Educación</button> 
-              <button class="btn btn-sm btn-outline-secondary" type="button">Experiencia</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button">Habilidades</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button">Sobre mí</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button">Contacto</button>
-            </form>
-
-    </nav>
-</section>
+ 
 
     <section>
     <!--seccion de educacion-->
@@ -84,6 +117,11 @@
         <h2>Sobre mí</h2>
 
     </section>
+
+
+
+
+
 
      <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
