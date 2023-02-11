@@ -1,14 +1,24 @@
+/*===ETIQUETAS HTML VAN CON EL NOMBRE NOMAS===*/
+/*=====LAS CLASES VAN CON "." ADELANTE==*/
+/*=====LOS ID VAN CON "#" ADELANTE==*/
+/*======================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body {
-    font-family:Verdana, sans-serif
-    overflow-x: hidden;
+
+/*======================================*/
+/*===============GENERAL================*/
+/*======================================*/
+body{
+    background-color: black;
+    color: #a014c8;
+}
+.header {
+    background-color: black;
 }
 
 
-<!-------------------------------------->
-<!-------------ENCABEZADO--------------->
-<!-------------------------------------->
+/*======================================*/
+/*============SECCION ENCABEZADO=========*/
+/*======================================*/
 
 
 
@@ -23,6 +33,4 @@ body {
 /*==============SECCION MENU============*/
 /*======================================*/
 
-#menu a{
-    
-}
+

@@ -15,62 +15,51 @@
     <!-- ENCABEZADO -->
     <!-------------------------------------->
     <!-- Parte de arriba con el argentina programa y el login -->
-<header class="container-fluid bg-dark d-flex justify-content-start">
+<header class="container-fluid d-flex justify-content-start">
     <img src="assets/css/img/logo argentina.png" class="d-block w-25 mx-0 p-2" alt="logo argentina programa">
     <p class="text-light mb-0 p-4 fs-5">#yoprogramo</p>
 </header>
+
 <!-------------------------------------->
 <!---------SECCION NAVBAR--------------->
 <!-------------------------------------->
-<nav class="navbar navbar-expand-lg sticky-top bg-dark p-3" id="menu">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <button class="bg-dark mg rounded"><span class="text-light fs-5 fw-bold">Inicio</span></button>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Educación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos  
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="email" placeholder="Correo electronico" aria-label="email">
-          <button class="btn btn-secondary text-light btn-outline-success" type="button">Buscar</button>
-        </form>
-      </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
+  Iniciar sesión
+</button>
     </div>
-  </nav>
+  </div>
+</nav>
 
 
 
 
-
-
-    <!--Seccion navbar-->
-    
-
- <!--introduccion al portfolio y boton de inicio-->
  
 
     <section>
@@ -96,19 +85,7 @@
     <!--seccion de contacto-->
 
         <h2>Contacto</h2>
-        <ul>
-            <li> 
-             <a href="https://instagram.com/" target="_blank">Instagram</a>
-            </li>
-
-            <li>            
-            <a href="https://facebook.com/" target="_blank">Facebook</a>
-            </li>
-            
-            <li>             
-            <a href="https://linkedin.com/" target="_blank">Linkedin</a>
-            </li>
-        </ul>
+        
     </section>
 
     <section>
@@ -118,7 +95,40 @@
 
     </section>
 
+<!---------MODALES-------->
+<!-- MODAL DE INICIO SESION-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
 
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
