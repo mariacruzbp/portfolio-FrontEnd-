@@ -12,131 +12,86 @@
 </head>
 <body>
     <!-------------------------------------->
-    <!-- ENCABEZADO -->
+    <!-------------encabezado--------------->
     <!-------------------------------------->
-    <!-- Parte de arriba con el argentina programa y el login -->
-<header class="container-fluid d-flex justify-content-start">
-    <img src="assets/css/img/logo argentina.png" class="d-block w-25 mx-0 p-2" alt="logo argentina programa">
-    <p class="text-light mb-0 p-4 fs-5">#yoprogramo</p>
-</header>
 
-<!-------------------------------------->
-<!---------SECCION NAVBAR--------------->
-<!-------------------------------------->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Educación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
-  Iniciar sesión
-</button>
-<button type="button" class="btn btn-dark">
-  Cerrar sesión
-</button>
+<section id="inicio">
+  <div class="contenido"> 
+   <header>
+    <div class="contenido-header">
+        <img src="assets/css/img/logo argentina.png" class="d-block w-25 mx-0 p-1" alt="logo argentina programa">
     </div>
+   </header>
   </div>
-</nav>
+</section>
 
+<!---barra de navegacion-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<!--icono---(esta vacio)-->
+<a class="navbar-brand" href="#">
+</a>
 
+<!-------boton del menu----->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <!--Elementos del menu colapsable-->
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav me-auto">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Sobre mi</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Educación</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Habilidades</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Proyectos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+        <ul>
+           <li>
 
- 
+           </li>
+           <li>
 
-    <section>
-    <!--seccion de educacion-->
+           </li>
+           <li>
 
-        <h2>Educación</h2>
-    </section>
-
-    <section>
-    <!--seccion de habilidades-->
-
-        <h2>Habilidades</h2>
-    </section>
-
-    <section>
-
-    <!--seccion de proyectos-->
-       <h2>Proyectos</h2> 
-
-    </section>
-
-    <section>
-    <!--seccion de contacto-->
-
-        <h2>Contacto</h2>
-        
-    </section>
-
-    <section>
-    <!--seccion de sobre mi-->
-
-        <h2>Sobre mí</h2>
-
-    </section>
-
-<!---------MODALES-------->
-<!-- MODAL DE INICIO SESION-->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar sesión</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Ingresar</button>
-      </div>
-    </div>
-  </div>
+           </li> 
+        </ul>
+    </li>
+</ul>
+<hr class="text-white-50"> <!--linea divisoria que va dentro del div-->
+</div>
 </div>
 
 
 
 
-     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+</nav>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+       <!-- JavaScript Bundle with Popper -->
+     
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  </html>
