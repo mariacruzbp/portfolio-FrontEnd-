@@ -18,19 +18,16 @@
 <section id="inicio">
   <div class="contenido"> 
    <header>
-    <div class="contenido-header">
-        <img src="assets/css/img/logo argentina.png" class="d-block w-25 mx-0 p-1" alt="logo argentina programa">
-    </div>
+    <div class="contenido-header p-1">  </div>
    </header>
   </div>
 </section>
 
 <!---barra de navegacion-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container-fluid">
-<!--icono---(esta vacio)-->
-<a class="navbar-brand" href="#">
-</a>
+<!--icono de arg programa---->
+<a class="navbar-brand"><img src="assets/css/img/logo argentina.png" class="d-block w-100" alt="logo argentina programa"></a>
 
 <!-------boton del menu----->
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,42 +38,53 @@
 <div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav me-auto">
     <li class="nav-item">
-        <a class="nav-link active" href="#">Inicio</a>
+        <a class="nav-link active" href="index.html"><button type="button" class="btn btn-outline-light" id="fondoRosa">Inicio</button></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Sobre mi</a>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light" id="fondoRosa">Sobre mí</button></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Educación</a>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light" id="fondoRosa">Educación</button></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Habilidades</a>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light" id="fondoRosa">Habilidades</button></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Proyectos</a>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light" id="fondoRosa">Proyectos</button></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-        <ul>
-           <li>
-
-           </li>
-           <li>
-
-           </li>
-           <li>
-
-           </li> 
-        </ul>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light" id="fondoRosa">Contacto</button></a>
     </li>
 </ul>
-<hr class="text-white-50"> <!--linea divisoria que va dentro del div-->
+<!----------------redes sociales---------------------->
+
+<hr class="text-white-50"><!--linea divisoria que va abajo de redes-->
+<ul class="navbar-nav" flex-row flex-wrap>
+    <li class="nav-item col-6 col-md-auto p-3">
+     <a href="https://github.com/mariacruzbp"><i class="fa-brands fa-github" id="colorIcono"></i></a>
+     <small class="d-md-none ms-2">GitHub</small>
+    </li>
+    <li class="nav-item col-6 col-md-auto p-3">
+     <a href="#"><i class="fa-brands fa-linkedin-in" id="colorIcono"></i></a>
+     <small class="d-md-none ms-2">Linkedin</small>
+    </li>
+    <li class="nav-item col-6 col-md-auto p-3">
+     <a href="#"><i class="fa-brands fa-codepen" id="colorIcono"></i></a>
+     <small class="d-md-none ms-2">Codepen</small>
+    </li> 
+    <hr class="text-white-50"><!--linea divisoria que va abajo de redes-->
+ </ul>
+
+<!------SECCION INICIO Y CERRAR SESION ----->
+<button type="button" class="btn btn-black" id="colorCerrarsesion" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <i class="fa-solid fa-lock"></i>
+  </button>
+  <button type="button" class="btn btn-black" id="colorIniciosesion">
+    <i class="fa-solid fa-lock-open"></i>
+  </button>
+
 </div>
 </div>
-
-
-
-
 </nav>
 
 
@@ -86,10 +94,43 @@
 
 
 
+  <!---------MODALES-------->
+
+<!----MODAL DE INICIO SESION------>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" id="colorDelogin">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+  
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+            </div>
+          </form>
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn" id="colorBotoningresarlogin">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
   
-  
-  
+
        <!-- JavaScript Bundle with Popper -->
      
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

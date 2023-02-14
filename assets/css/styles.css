@@ -36,3 +36,31 @@ body{
 /*======================================*/
 
 
+#fondoRosa{
+    background-color: #ff89d2;
+}
+
+
+#colorIcono{
+    color: #a014c8;
+}
+ 
+/*===colores incio y cerrado de sesion===*/
+#colorIniciosesion{
+    background-color: black;
+    color:#a014c8; 
+}
+#colorCerrarsesion{
+    background-color: black;
+    color:#a014c8; 
+}
+
+/*==========ESTILOS EN MODALES===========*/
+#colorDelogin{
+    color:black;
+}
+
+#colorBotoningresarlogin{
+    background-color: #a014c8;
+    color:white;
+}
