@@ -34,11 +34,14 @@ body{
 /*======================================*/
 /*==============SECCION MENU============*/
 /*======================================*/
-
+nav{
+    box-shadow: 0 3px 5px rgba(250, 248, 248, 0.1);
+}
 
 #fondoRosa{
     background-color: #ff89d2;
 }
+
 
 
 #colorIcono{
@@ -64,3 +67,47 @@ body{
     background-color: #a014c8;
     color:white;
 }
+
+/*===========seccion sobre mi============*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+  .hero img {
+    height: 25.5rem;
+    width: 30.5rem;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px rgb(rgb(241, 239, 239));
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+  .mas-sobre {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+  
+  .mas-sobre h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .mas-sobre p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
